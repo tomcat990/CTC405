@@ -134,15 +134,42 @@
 			division
 				\begin{cases}
 					XA=B \rightarrow X=B/A \\
-					AX=B \rightarrow X=AB
+					AX=B \rightarrow X=A\backslash B
 					
 				\end{cases}
 			\]
 		\end{itemize}
 		\end{frame}
 		
+		\begin{frame}{Some other commands}
+			\begin{itemize}
+				\item dot, cross
+				\item xor,and, all, any, find
+				\item dec2bin, dec2hex,\dots
+				
+			\end{itemize}
+		\end{frame}
+		
 		\begin{frame}{Functions}
+			\large function [output arguments] = function\_name(input arguments)
+			example:\\
 			
 		\end{frame}
 		
+		\begin{frame}{Anonymous functions}
+			\large f = @(arguments) 'expression'\\
+			\vspace{1cm}
+			example:\\
+			$$y = @(x)\; x.^2+2*x+3;$$
+		\end{frame}
+		
+		\begin{frame}{Polynomial}
+				\begin{enumerate}
+					\item Define an array
+					\item Use '$polyval(P,)$' command to get the value
+					\item Use '$roots(P)$' to get the all real and complex roots
+					\item '$conv $' and '$ deconv$' commands
+					\item $polyfit(y,x,n)$ command
+				\end{enumerate}
+		\end{frame}
 \end{document}
